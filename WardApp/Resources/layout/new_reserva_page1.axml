@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollbars="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="@color/White"
+        android:background="?attr/colorPrimary"
+        android:textStyle="bold"
+        android:padding="15dp"
+        android:text="Nova Reserva - Selecione o periodo"
+        android:gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Data de inicio"
+            android:textSize="15dp"
+            android:gravity="center" />
+      <DatePicker
+            android:id="@+id/dtpInicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"
+            android:scaleY="0.8"
+            android:scaleX="0.8" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Data final"
+            android:textSize="15dp"
+            android:gravity="center" />
+        <DatePicker
+            android:id="@+id/dtpFinal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"
+            android:scaleY="0.8"
+            android:scaleX="0.8" />
+    </LinearLayout>
+</ScrollView>

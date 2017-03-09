@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Filtro"
+        android:textColor="@color/White"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/textView1"
+        android:textSize="25dp"
+        android:padding="10dp"
+        android:background="?attr/colorPrimaryDark" />
+    <TextView
+        android:text="Ordernar por"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?attr/colorBackgroundRow" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <RadioGroup
+          android:theme="@style/Theme2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/rgroupFilterRes"
+          android:orientation="horizontal">
+            <RadioButton
+              android:textColor="?attr/android:textColorSecondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Mais recentes"
+                android:id="@+id/rbtnFilterRecentes" />
+          <RadioButton
+            android:textColor="?attr/android:textColorSecondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mais antigos"
+                android:id="@+id/rbtnFilterAntigos"
+                android:layout_marginLeft="10dp" />
+        </RadioGroup>
+    </LinearLayout>
+    <TextView
+        android:text="Filtrar por"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?attr/colorBackgroundRow" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <TextView
+            android:text="Nome da sala"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:textSize="16dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtFilterNomeSala"
+            android:maxLength="20"
+            android:textSize="15dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?attr/colorBackgroundRow" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <TextView
+            android:text="Data de criação"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:textSize="16dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblFilterDataCriacao"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Clique para configurar a data"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight ="20dp"
+        android:layout_marginLeft ="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="?attr/colorBackgroundRow" />
+    <Button
+        android:background="?attr/colorPrimary"
+        android:textColor="@color/White"
+        android:text="Aplicar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnFilterResAplicar"
+        android:padding="5dp" />
+<!--<Button
+    android:theme="@style/Button"
+    android:text="Fechar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/btnFilterResFechar"
+    android:layout_marginTop="5dp"/>
+        android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"-->
+</LinearLayout>

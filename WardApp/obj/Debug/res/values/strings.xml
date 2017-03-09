@@ -1,0 +1,1 @@
+<resources><string name="Hello">Hello World, Click Me!</string><string name="ApplicationName">WardApp</string><string name="filtro_string">Nenhum</string><string-array name="filtro_array"><item>Mais recentes</item><item>Nome da Sala</item><item>ID da reserva</item></string-array></resources>

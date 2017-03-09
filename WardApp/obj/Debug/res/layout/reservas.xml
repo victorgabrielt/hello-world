@@ -1,0 +1,27 @@
+<LinearLayout android:id="@+id/reservaMainLayout" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android"><Button android:id="@+id/btnFiltro" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Filtrar" android:textSize="14dp" android:background="?attr/colorAccent" android:textColor="@color/White" android:theme="@style/ImportantButton" /><!--<LinearLayout
+        android:id="@+id/filterLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_margin="10dp" >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filtrar"
+        android:textSize="20dp" />
+    <Spinner
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:id="@+id/spinnerFilter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:spinnerMode="dropdown"
+        />
+    </LinearLayout>
+  <EditText
+    android:id="@+id/txtFilter"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:visibility="gone"/> --><android.support.design.widget.CoordinatorLayout android:id="@+id/cordLayout" android:layout_width="match_parent" android:layout_height="fill_parent"><android.support.v4.widget.SwipeRefreshLayout android:id="@+id/layoutSwipeRefresh" android:layout_width="match_parent" android:layout_height="match_parent"><android.support.v7.widget.RecyclerView android:id="@+id/reservasList" android:layout_width="match_parent" android:layout_height="match_parent" android:scrollbars="vertical" /></android.support.v4.widget.SwipeRefreshLayout><android.support.design.widget.FloatingActionButton android:id="@+id/fbtnAddReserva" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="bottom|right" android:layout_margin="16dp" android:src="@drawable/ic_add" app:layout_anchor="@id/reservasList" app:layout_anchorGravity="bottom|right|end" app:layout_behavior="md592452012d61c676221a90252fbb6dcb5.ScrollFABBehavior" /></android.support.design.widget.CoordinatorLayout></LinearLayout>

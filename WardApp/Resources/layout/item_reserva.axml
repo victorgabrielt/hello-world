@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayoutReservaItem"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="4"
+    android:layout_marginBottom="5dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_height="fill_parent"
+        android:layout_width="0dp"
+        android:minWidth="100dp"
+        android:background="?attr/colorPrimaryDark">
+        <TextView
+            android:text="Sala"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textColor="@color/White"
+            android:layout_marginLeft="5dp" />
+        <TextView
+            android:id="@+id/lblSalaNum"
+            android:text="14A"
+            android:textSize="24dp"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textColor="@color/White" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorBackgroundRow">
+      <TextView
+          android:id="@+id/lblDisc"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:text="Engenharia de Software III"
+          android:textColor="?attr/colorAccent"
+          android:layout_marginTop="5dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"/>
+      
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Turma:" />
+            <TextView
+                android:id="@+id/lblTurmaId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="271"
+                android:layout_marginLeft="5dp"
+                android:textColor="?attr/colorAccent" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Horário:"
+                android:layout_marginLeft="10dp" />
+            <TextView
+                android:id="@+id/lblAulaHorario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16:40"
+                android:layout_marginLeft="5dp"
+                android:textColor="?attr/android:textColorSecondary" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layoutDataIni"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/lblDataIniTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data inicial:" />
+            <TextView
+                android:id="@+id/lblDataIni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="19/12/2016"
+                android:layout_marginLeft="5dp"
+                android:textColor="?attr/android:textColorSecondary" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp" >
+            <TextView
+                android:id="@+id/lblDataFinalTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ativa até: " />
+            <TextView
+                android:id="@+id/lblDataFinal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="19/12/2016"
+                android:layout_marginLeft="5dp"
+                android:textColor="?attr/android:textColorSecondary" />
+          <TextView
+                android:id="@+id/lblDiasRest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 dia(s) restante(s)"
+                android:layout_marginLeft="5dp"
+                android:textColor="?attr/colorAccent" />
+        </LinearLayout>
+      <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:id="@+id/lblDiaSemana"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="(Quarta-feira)."
+            android:textColor="?attr/android:textColorSecondary" />
+
+      </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
